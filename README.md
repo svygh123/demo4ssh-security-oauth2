@@ -45,3 +45,6 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 ```
+## 4. 注意
+     * 这里用mysql数据库test.sql,只校验了用户名和密码,而且自定义了加密方式
+     * 退出功能请自行校验
