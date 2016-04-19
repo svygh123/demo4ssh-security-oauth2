@@ -9,8 +9,8 @@
      url: http://localhost:8080/demo4ssh-security-oauth2/oauth/token?client_id=mobile_1&client_secret=secret_1&grant_type=password&username=admin&password=1  
      方法: get  
      返回值: {"access_token":"d6d493ae-6045-465d-8f0e-68e94cd6b62c","token_type":"bearer","refresh_token":"edcb3be6-10f8-4381-80e8-e56aeebd74f0","expires_in":604799,"scope":"read trust write"}  
-     jQuery代码:  
 ```javascript
+// jQuery代码:
 var settings = {
   "async": true,
   "crossDomain": true,
@@ -28,9 +28,9 @@ $.ajax(settings).done(function (response) {
      步骤2:  
      url: http://localhost:8080/demo4ssh-security-oauth2/webapi/json?access_token=d6d493ae-6045-465d-8f0e-68e94cd6b62c
      方法: get  
-     返回值: [{"id":1,"username":"admin","password":"4DFF4EA340F0A823F15D3F4F01AB62EAE0E5DA579CCB851F8DB9DFE84C58B2B37B89903A740E1EE172DA793A6E79D560E5F7F9BD058A12A280433ED6FA46510A"},{"id":2,"username":"wangwu","password":"4DFF4EA340F0A823F15D3F4F01AB62EAE0E5DA579CCB851F8DB9DFE84C58B2B37B89903A740E1EE172DA793A6E79D560E5F7F9BD058A12A280433ED6FA46510A"}]  
-     jQuery代码:  
+     返回值: [{"id":1,"username":"admin","password":"4DFF4EA340F0A823F15D3F4F01AB62EAE0E5DA579CCB851F8DB9DFE84C58B2B37B89903A740E1EE172DA793A6E79D560E5F7F9BD058A12A280433ED6FA46510A"},{"id":2,"username":"wangwu","password":"4DFF4EA340F0A823F15D3F4F01AB62EAE0E5DA579CCB851F8DB9DFE84C58B2B37B89903A740E1EE172DA793A6E79D560E5F7F9BD058A12A280433ED6FA46510A"}]   
 ```javascript
+// jQuery代码:
 var settings = {
   "async": true,
   "crossDomain": true,
